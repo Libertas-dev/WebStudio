@@ -97,11 +97,27 @@ ul {
 /* hero */
 .hero {
     height: 600px;
+    position: relative;
     text-align: center;
-    background: url(../images/hero-bg.jpg) center / cover no-repeat;
+    background: url(../images/hero-bg.jpg) center / cover #8a8a8a;
     display: flex;
     align-items: center;
     color: #fff;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -295,4 +311,21 @@ ul {
 
 .client-item-box:hover svg path[fill='#AFB1B8'] {
     fill: #2196f3;
+}
+
+/* work */
+.work-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.work-list__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.work-list__item::before {
+    content: '\2764';
+    font-size: 24px;
 }
