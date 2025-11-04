@@ -291,10 +291,6 @@ ul {
     gap: 30px;
 }
 
-.client-item-box svg {
-    display: block;
-}
-
 .client-item-box {
     padding: 15px 31px;
     border: 1px solid #afb1b8;
